@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagination Task</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body> 
-    <h1 id="title">User Details</h1>
-    <section >
-        <div class="table-responsive">
-            <table class="table table-border"></table>  
-        </div>  
-    </section> 
-     <!-- changes page number  -->
-     <br>
-    <hr>
-    <div >current page:
-        <p class="changes"></p>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-info" id="title">
+            <h1 id="title">Pagination Task </h1>
+        </nav> 
+        <div class="tableDemo">
+          <table class="table" id="list">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email Id</th>
+              </tr>
+            </thead>
+         </table>
+         <nav class="navbar navbar-dark bg-red" id="navpage">
+            <ul class="pagination">
+              <li class="page-item" id="pagination"></li>
+             </ul>
+         </nav>
+        </div>
     </div>
-    <hr> 
-    <!-- buttons to access page -->
-    <div class="button">
-        <button class="firstBtn">First</button>
-        <button class="prevBtn">Previous</button>
-        <button class="btn btn1">1</button>
-        <button class="btn btn2">2</button>
-        <button class="btn btn3">3</button>
-        <button class="btn btn4">4</button>
-        <button class="btn btn5">5</button>
-        <button class="btn btn6">6</button>
-        <button class="btn btn7">7</button>
-        <button class="btn btn8">8</button>
-        <button class="btn btn9">9</button>
-        <button class="btn btn10">10</button>
-        <button class="nextBtn">Next</button>
-        <button class="lastBtn">Last</button>
-        <div id="buttons" class="d-flex" type="button"></div>
-    </div>
-    <!-- js file link -->
-    <p id="boo"></p>
-    <script src="script.js"></script>
-    
-    
+   <script src="./script.js"></script>
 </body>
+
 </html>
